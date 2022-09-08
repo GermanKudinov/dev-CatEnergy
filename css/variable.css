@@ -6,5 +6,7 @@
       --fs: 16px;
       --line-height: 1.5;
       --text: #000;
+      /* Fonts */
+      --font-family: "ArialNarrow"
         
 }

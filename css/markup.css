@@ -1,11 +1,14 @@
 @import url(variable.css);
 @import url(bootstrap.min-5.css);
+@import url(fonts.css);
 
 body{
     font-size: var(--fs);
     line-height: var(--line-height);
     color: var(--text);
+    background: var(--bs-secondary) ;
 }
+
 
 .container {
     max-width: 1440px;
@@ -15,7 +18,7 @@ body{
 
 .custom-row{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 li{
@@ -26,9 +29,17 @@ li{
     max-width: 400px;
     width: 100%;
     height: 400px;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
+.site-map a{
+    color: var(--text);
+}
+p{
+    padding: 0px 10px;
+    color: var(--text);
+
+}
 .primary-color{
     width: 350px;
     height: 150px;
@@ -43,4 +54,8 @@ li{
     margin: 20px 25px;
     background-color: var(--bg-secondary);
     border: 1px solid black;
+}
+
+.fonts{
+    font-family: var(--font-family);
 }
