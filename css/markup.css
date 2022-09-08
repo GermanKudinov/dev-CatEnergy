@@ -1,0 +1,46 @@
+@import url(variable.css);
+@import url(bootstrap.min-5.css);
+
+body{
+    font-size: var(--fs);
+    line-height: var(--line-height);
+    color: var(--text);
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+}
+
+.custom-row{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+}
+.custom-li{
+    margin: 50px 120px 20px;
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.primary-color{
+    width: 350px;
+    height: 150px;
+    margin: 20px 25px;
+    background-color: var(--bg-primary);
+    border: 1px solid black;
+}
+
+.secondaru-color{
+    width: 350px;
+    height: 150px;
+    margin: 20px 25px;
+    background-color: var(--bg-secondary);
+    border: 1px solid black;
+}

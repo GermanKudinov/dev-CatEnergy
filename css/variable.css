@@ -1,0 +1,10 @@
+:root{
+    /* brand-color */
+    --bg-primary:#68B738;
+    --bg-secondary:#F2F2F2;
+      /*text-default*/
+      --fs: 16px;
+      --line-height: 1.5;
+      --text: #000;
+        
+}
