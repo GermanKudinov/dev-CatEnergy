@@ -1,12 +1,15 @@
+@import url(fonts.css);
+
 :root{
     /* brand-color */
-    --bg-primary:#68B738;
-    --bg-secondary:#F2F2F2;
+    --primary-color:#68B738;
+    --secondary-color:#F2F2F2;
       /*text-default*/
       --fs: 16px;
       --line-height: 1.5;
       --text: #000;
-      /* Fonts */
-      --font-family: "ArialNarrow"
+      /* fonts */
+      --ArialMT: font-family: "ArialMT";
+      --Oswald-Regular: font-family: "Oswald-Regular";
         
 }

@@ -5,8 +5,7 @@
 body{
     font-size: var(--fs);
     line-height: var(--line-height);
-    color: var(--text);
-    background: var(--bs-secondary) ;
+    color: var(--text); 
 }
 
 
@@ -28,7 +27,8 @@ li{
     margin: 50px 120px 20px;
     max-width: 400px;
     width: 100%;
-    height: 400px;
+    max-height: 450px;
+    height: 100%;
     border: 3px solid black;
 }
 
@@ -44,18 +44,137 @@ p{
     width: 350px;
     height: 150px;
     margin: 20px 25px;
-    background-color: var(--bg-primary);
+    background-color: var(--primary-color);
     border: 1px solid black;
 }
 
-.secondaru-color{
+.secondary-color{
     width: 350px;
     height: 150px;
     margin: 20px 25px;
-    background-color: var(--bg-secondary);
+    background-color: var(--secondary-color);
     border: 1px solid black;
 }
 
-.fonts{
-    font-family: var(--font-family);
+.font-weight-light {
+    font-weight: 400;
+}
+
+.font-weight-regular{
+    font-weight: 500;
+}
+
+.font-weight-bold{
+    font-weight: 800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title-1,
+.title-2,
+.title-3,
+.title-4,
+.title-5,
+.title-6 {
+    line-height: 1;
+    color: var(--text);
+    font-weight: 400;
+    font-family: "Oswald-Regular";
+}
+
+h1,
+.title-1 {
+    font-size: 60px;
+}
+
+h2,
+.title-2 {
+    font-size: 36px;
+}
+
+h3,
+.title-3 {
+    font-size: 24px;
+}
+
+h4,
+.title-4 {
+    font-size: 20px;
+}
+ 
+h5,
+.title-5{
+    font-size: 18px;
+}
+
+h6,
+.title-6 {
+    font-size: 17px;
+}
+
+p{
+    font-size: 16px;
+}
+
+::selection {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+input {
+    display: none;
+}
+label {
+    cursor: pointer;
+}
+
+label:hover {
+    color: #555252;
+}
+
+label::before{
+    content: '';
+    padding: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid ;
+    border-radius: 50%;
+    
+}
+
+.custom-label-box::before{
+    content: '';
+    padding: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid ;
+    border-radius: 0px;
+}
+
+.custom-radio:checked + label::before{
+        background: url(../img/radiobuttonactive.svg) center/18px no-repeat;
+ }
+
+ input:checked + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }
+
+  .custom-box:checked + .custom-label-box::before{
+    background: url(../img/checkbox.png) center/36px no-repeat;
 }

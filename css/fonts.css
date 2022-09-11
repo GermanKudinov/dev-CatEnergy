@@ -1,10 +1,11 @@
 @font-face {
-    font-family: "Arial-Black";
-    src: url(/dev-CatEnergy/fonts/Arial-Black.ttf);
-    font-weight: 400px;
+    font-family: "ArialMT";
+    src: url(/dev-CatEnergy/fonts/ArialMT.ttf) format('opentype');
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: "ArialNarrow";
-    src: url(/dev-CatEnergy/fonts/ArialNarrow.ttf);
+    font-family: "Oswald-Regular";
+    src: url(/dev-CatEnergy/fonts/Oswald-Regular.ttf) format('opentype');
+    font-weight: 400;
 }
