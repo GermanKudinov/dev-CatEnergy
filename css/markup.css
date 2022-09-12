@@ -178,3 +178,36 @@ label::before{
   .custom-box:checked + .custom-label-box::before{
     background: url(../img/checkbox.png) center/36px no-repeat;
 }
+
+.btn{
+    display: inline-block;
+    padding: 12.5px 29px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    line-height: 1.5;
+}
+
+.btn-primary{
+    color: white;
+    background: var(--primary-color);
+    font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+cursor: pointer;
+border: 0px;
+border-radius: 0%;
+}
+
+.btn-primary:hover{
+    background: #5EAA2F
+}
