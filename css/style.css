@@ -1,0 +1,64 @@
+@import url(bootstrap.min-5.css);
+@import url(variable.css);
+@import url(fonts.css);
+
+
+header a{
+     font-family: "Oswald";
+     position: relative;
+}
+
+header a::before{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.4s;
+}
+
+
+
+header a:hover{
+    text-decoration: none;
+}
+
+header a:hover::before{
+    width: 100%;
+}
+
+header .navbar{
+    padding-top: 53px;
+    background-color: var(--primary-color);
+}
+
+header .navbar .navbar-nav .nav-link{
+    font-size: 20px;
+    line-height: var(--line-height);
+    text-transform: uppercase;
+    color: white;
+    padding: 0px;
+}
+
+header .navbar .navbar-nav .nav-item{
+    padding: 0 0 0 22px;
+}
+
+header .navbar .navbar-nav .nav-item::before{
+    display: none;
+}
+
+header .navbar .navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+}
