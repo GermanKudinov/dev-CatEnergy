@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatEnergy</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav class="container navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <img src="/img/logo-desktop.svg" alt="logo-desktop">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img src="img/logo-mobile.svg" alt="logo">
+                </picture>
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
@@ -35,9 +40,10 @@
           </nav>
     </header>
     <main>
-        <div class="container">
-       <div class="bg-desktop"></div>
-        </div>
+
     </main>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
